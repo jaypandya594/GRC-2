@@ -398,7 +398,7 @@ function CreateEvidenceDialog({ open, onOpenChange, onCreated, tenants, defaultT
           setUploading(false)
         })
         xhr.addEventListener('error', () => { toast.error('Network error during upload'); setUploading(false) })
-        xhr.open('POST', '/api/evidence/upload')
+        xhr.open('POST', '/api/evidence')
         xhr.send(formData)
       } else {
         await api('/api/evidence', {
