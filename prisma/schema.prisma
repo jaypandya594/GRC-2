@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("mysql://mysql:ztAoV0srpoiRZcmmY8ECB1RO0OI2pIwEiws23TwJUpaH549yWahrp2Uxm1Fez6Aq@bu74d3jw7gb5gohfkrkrzi2b:3306/default")
+  url      = env("DATABASE_URL")
 }
 
 // ============================================================
